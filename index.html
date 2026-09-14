@@ -1,3 +1,45 @@
+Done. I rewrote the site positioning around the model you described:
+
+AI-powered UGC-style content on demand
+Publishing across multiple TikTok and Instagram accounts
+Creating and testing hundreds of creative variations
+Growing reach and brand awareness organically rather than buying every impression
+Using performance data to identify winning hooks and formats, then producing more variations
+Positioning MassUGC as a substantially lower-cost alternative to a paid-ad-heavy growth model
+
+I also incorporated the “up to 95% lower cost” message, but added a small qualification because the actual savings will depend on ad spend, production costs, software, content volume, etc. That keeps the marketing punch without presenting 95% savings as guaranteed.
+
+Your $29 Stripe checkout link is still connected throughout the site.
+
+Download the revised MassUGC website
+
+Open/download the standalone website
+
+MassUGC-Website-Standalone.html
+HTML
+Today 2:38 PM
+Can you also make it so that there is a limited time offer to get the Playbook for $249 instead of $399
+
+Done. I updated the site so the Playbook is now positioned as a limited-time $249 offer, normally $399.
+
+The pricing section now visually shows $399 crossed out → $249, and I updated the announcement bar, hero CTA, FAQ, and final CTA to match. Your Stripe checkout link is still connected everywhere.
+
+Download the updated MassUGC website package
+
+Open/download the standalone website
+
+MassUGC-Website-Standalone.html
+HTML
+https://buy.stripe.com/14AeVcgPPcWv8zv0Kf0oM02
+
+I also updated the stripe link. Please change nothing else but replace the old one with this.
+
+Done. I changed only the Stripe checkout URL to your new link and left everything else untouched.
+
+Download the updated MassUGC website
+
+Open/download the standalone version
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -182,7 +224,8 @@ h3 { font-size: 22px; }
 .mock-cover small { margin-top: auto; font-size: 9px; letter-spacing: .12em; }
 .mock-spine { position: absolute; width: 18px; height: 286px; background: #bcb5aa; transform: translate(-111px, 4px) rotate(-6deg); z-index: 0; }
 .offer-content { padding: 26px 6px 4px; }
-.price-row { display: flex; align-items: baseline; gap: 10px; }
+.price-row { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+.original-price { color: var(--muted); font: 600 22px/1 "Manrope"; text-decoration: line-through; opacity: .75; }
 .price { font: 800 40px/1 "Manrope"; }
 .price-note { color: var(--muted); font-size: 13px; }
 .offer-content > p { color: var(--muted); }
@@ -281,7 +324,7 @@ footer { padding: 40px 0 52px; }
   </style>
 </head>
 <body>
-  <div class="announcement">The MassUGC Playbook is now available — launch your content engine for $29.</div>
+  <div class="announcement">Limited-time offer: Get the MassUGC Playbook for $249 — normally $399.</div>
 
   <header class="nav-wrap">
     <nav class="nav container">
@@ -295,7 +338,7 @@ footer { padding: 40px 0 52px; }
         <a href="#proof">Results</a>
         <a href="#faq">FAQ</a>
       </div>
-      <a class="btn btn-small" href="https://buy.stripe.com/fZuaEWgPP6y73fb64z0oM01">Get the Playbook</a>
+      <a class="btn btn-small" href="https://buy.stripe.com/14AeVcgPPcWv8zv0Kf0oM02">Get the Playbook</a>
     </nav>
   </header>
 
@@ -307,7 +350,7 @@ footer { padding: 40px 0 52px; }
           <h1>Scale organic reach with hundreds of AI-powered UGC creatives.</h1>
           <p class="hero-sub">MassUGC shows you how to use AI to create UGC-style content on demand, run it across multiple TikTok and Instagram accounts, and test hundreds of creative variations to grow brand awareness without depending on paid ads.</p>
           <div class="hero-actions">
-            <a class="btn" href="https://buy.stripe.com/fZuaEWgPP6y73fb64z0oM01">Get the $29 Playbook</a>
+            <a class="btn" href="https://buy.stripe.com/14AeVcgPPcWv8zv0Kf0oM02">Get the Playbook for $249</a>
             <a class="text-link" href="#system">See how it works <span>↘</span></a>
           </div>
           <div class="mini-proof">
@@ -441,9 +484,9 @@ footer { padding: 40px 0 52px; }
             </div>
           </div>
           <div class="offer-content">
-            <div class="price-row"><span class="price">$29</span><span class="price-note">one-time</span></div>
+            <div class="price-row"><span class="original-price">$399</span><span class="price">$249</span><span class="price-note">limited-time · one-time</span></div>
             <p>Get the operating framework, templates, and step-by-step process in one concise guide.</p>
-            <a id="checkout-btn" class="btn btn-full" href="https://buy.stripe.com/fZuaEWgPP6y73fb64z0oM01" data-checkout-url="https://buy.stripe.com/fZuaEWgPP6y73fb64z0oM01">Get Instant Access</a>
+            <a id="checkout-btn" class="btn btn-full" href="https://buy.stripe.com/14AeVcgPPcWv8zv0Kf0oM02" data-checkout-url="https://buy.stripe.com/14AeVcgPPcWv8zv0Kf0oM02">Get Instant Access</a>
             <small class="secure-note">Secure checkout · Digital product · Immediate delivery</small>
           </div>
         </div>
@@ -508,7 +551,7 @@ footer { padding: 40px 0 52px; }
             <p>No. MassUGC is built around organic distribution. The system is designed to help you create UGC-style content at volume and publish it across multiple TikTok and Instagram accounts so you can grow reach and brand awareness without having to buy every impression.</p>
           </details>
           <details>
-            <summary>What do I get for $29?</summary>
+            <summary>What do I get for $249?</summary>
             <p>A concise digital playbook explaining how to use AI, repeatable UGC formats, multiple TikTok and Instagram accounts, and organic performance data to build a scalable short-form content engine.</p>
           </details>
           <details>
@@ -524,7 +567,7 @@ footer { padding: 40px 0 52px; }
         <span class="eyebrow">Build the machine</span>
         <h2>Turn AI-powered UGC into an organic growth engine.</h2>
         <p>Start with the MassUGC Playbook and learn how to create hundreds of UGC-style creative tests, distribute them across multiple accounts, and scale the formats that earn attention organically.</p>
-        <a class="btn" href="https://buy.stripe.com/fZuaEWgPP6y73fb64z0oM01">Get the Playbook for $29</a>
+        <a class="btn" href="https://buy.stripe.com/14AeVcgPPcWv8zv0Kf0oM02">Get the Playbook for $249</a>
       </div>
     </section>
   </main>
